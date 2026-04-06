@@ -1,0 +1,16 @@
+<section>
+
+    @if (isLoggedIn) {
+        <p>Bienvenido, {{ username }}</p>
+        <img 
+        (click)=greetUser()
+        alt="Imagen de perfil" 
+        src="https://github.com/Altph4.png" width="100">
+    }@else {
+        <p>Inicia Sesión!!</p>
+    }
+
+
+</section>
+
+
